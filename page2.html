@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sign Up</h1>
+      <form class="signup-form" action="/signup" method="post">
+        <label for="username"><b style="color: #3c43c9;">Username:</b></label><br>
+        <input type="text" id="username" name="username" required><br>
+        <label for="name"><b style="color: #3c43c9;">Name:</b></label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="address"><b style="color: #3c43c9;">Address:</b></label><br>
+        <input type="text" id="address" name="address" required><br>
+        <label for="country"><b style="color: #3c43c9;">Country:</b></label><br>
+        <input type="text" id="country" name="country" required><br>
+        <label for="ZIP code"><b style="color: #3c43c9;">ZIP code:</b></label><br>
+        <input type="text" id="ZIP code" name="ZIP code" required><br>
+        <label for="gender" style="color: #3c43c9 ;"><b>Select sex:</b></label>
+        <select name="gender" required>
+	      <option value="male">Male</option>
+	      <option value="female">Female</option>
+	      <option value="other">Other</option>
+        </select><br>
+        <label for="Language"><b style="color: #3c43c9;">Language:</b></label><br>
+        <input type="text" id="Language" name="Language" required><br>
+        <label for="About"><b style="color: #3c43c9;">About:</b></label><br>
+        <input type="text" id="About" name="About" required><br>
+        <label for="email"><b style="color: #3c43c9;">Email:</b></label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="password"><b style="color: #3c43c9;">Password:</b></label><br>
+        <input type="password" id="password" name="password" required><br>
+        <label for="confirm-password"><b style="color: #3c43c9;">Confirm Password:</b></label><br>
+        <input type="password" id="confirm-password" name="confirm-password" required><br><br>
+        <button type="submit"><b style="font-size: 17;">Sign up</b></button>
+      </form> 
+    </div>
+    <div class="signup-link">
+      <b style="color: #3c43c9; font-size: 17;">Already have an account?</b>
+      <a href="index.html" style="color: rgb(0, 0, 0); font-size: 17;">
+          <b><u style="color: #20008b;">Login<u></b>
+      </a>
+    </div>
+  </body>
+</html>
