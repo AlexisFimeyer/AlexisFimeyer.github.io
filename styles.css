@@ -57,8 +57,6 @@ body {
   background-color: #2f3491; 
 }
 
-
-
 .signup-link {
   text-align: center;
   margin-top: 20px;
@@ -77,6 +75,7 @@ h1 {
   font-size: 40px;
   color: #3c43c9;
 }
+
 img {
   display: inline-block;
   vertical-align: middle;
@@ -111,10 +110,10 @@ img {
     cursor: pointer;
 }
 
-
 .prog{
   display: flex;
   justify-content: center; /* centers the content horizontally */
+  margin-top: 200px;
 }
 
 .progress-bar {
@@ -131,7 +130,6 @@ img {
   background-color: #3c43c9;
   transition: width 0.3s ease-in-out;
 }
-
 
 .goals-table th {
   background-color: #3c43c9;
@@ -193,7 +191,6 @@ img {
   border-radius: 4px;
   font-size: 16px;
 }
-
 
 .signup-link {
   text-align: center;
