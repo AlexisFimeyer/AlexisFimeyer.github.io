@@ -1,313 +1,311 @@
 
-      body {
-        background-color:#b4d8f0;
-        font-family: Arial, sans-serif;
-      }
-      
-      .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
+body {
+  background-color:#b4d8f0;
+  font-family: Arial, sans-serif;
+}
 
-      .login-form {
-        width: 300px;
-        margin: 50px 0;
-        border: 1px solid #3c43c9;
-        border-radius: 5px;
-        background-color: #b4d8f0;
-        padding: 20px;
-      }
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-      .login-form input[type="text"],
-      .login-form input[type="password"] {
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        box-sizing: border-box;
-        border: 1px solid #3c43c9;
-        border-radius: 4px;
-        font-size: 16px;
-      }
+.login-form {
+  width: 300px;
+  margin: 50px 0;
+  border: 1px solid #3c43c9;
+  border-radius: 5px;
+  background-color: #b4d8f0;
+  padding: 20px;
+}
 
-      .modify-button,
-      .delete-button {
-        width: 100%;
-        background-color: #3c43c9; 
-        color: white;
-        padding: 4px 2px;
-        margin: 4px 0;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-      }
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #3c43c9;
+  border-radius: 4px;
+  font-size: 16px;
+}
 
-      .login-form button {
-        width: 100%;
-        background-color: #3c43c9; 
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-      }
+.modify-button,
+.delete-button {
+  width: 100%;
+  background-color: #3c43c9; 
+  color: white;
+  padding: 4px 2px;
+  margin: 4px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
-      .login-form button:hover {
-        background-color: #2f3491; 
-      }
+.login-form button {
+  width: 100%;
+  background-color: #3c43c9; 
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
-      
+.login-form button:hover {
+  background-color: #2f3491; 
+}
 
-      .signup-link {
-        text-align: center;
-        margin-top: 20px;
-      }
 
-      .signup-link a {
-        color: #3c43c9;
-        text-decoration: none;
-        font-size: 14px;
-      }
 
-      h1 {
-        margin: 0;
-        padding: 30px 0;
-        text-align: center;
-        font-size: 40px;
-        color: #3c43c9;
-      }
-      img {
-        display: inline-block;
-        vertical-align: middle;
-        }
+.signup-link {
+  text-align: center;
+  margin-top: 20px;
+}
 
-        .goals-table {
-            width: 600px;
-            border: 1px solid #3c43c9;
-            border-radius: 5px;
-            background-color: #b4d8f0;
-            margin: 50px 0;
-          }
-      
-          .goals-table th,
-          .goals-table td {
-            border: 1px solid #3c43c9;
-            padding: 12px 20px;
-            text-align: left;
-          }
-      
-          .add-goal-button {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              width: 200px;
-              background-color: #3c43c9;
-              color: white;
-              padding: 14px 20px;
-              margin: 50px auto; /* change this from margin: 50px 0; */
-              border: none;
-              border-radius: 4px;
-              cursor: pointer;
-          }
+.signup-link a {
+  color: #3c43c9;
+  text-decoration: none;
+  font-size: 14px;
+}
 
-        
-          .prog{
-            display: flex;
-            justify-content: center; /* centers the content horizontally */
-          
-          }
+h1 {
+  margin: 0;
+  padding: 30px 0;
+  text-align: center;
+  font-size: 40px;
+  color: #3c43c9;
+}
+img {
+  display: inline-block;
+  vertical-align: middle;
+}
 
-          .progress-bar {
-            width: 60%;
-            height: 20px;
-            background-color: #ddd;
-            border: 1px solid #3c43c9;
-            border-radius: 5px;
-            overflow: hidden;
-          }
-          
-          .progress-bar-fill {
-            height: 100%;
-            background-color: #3c43c9;
-            transition: width 0.3s ease-in-out;
-          }
-      
-      
-          .goals-table th {
-            background-color: #3c43c9;
-            color: white;
-          }
+.goals-table {
+  width: 600px;
+  border: 1px solid #3c43c9;
+  border-radius: 5px;
+  background-color: #b4d8f0;
+  margin: 50px 0;
+}
 
-          .input-field {
-            width: 100%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            box-sizing: border-box;
-            border: 1px solid #3c43c9;
-            border-radius: 4px;
-            font-size: 16px;
-          }
-    
-          .signup-form {
-            width: 300px;
-            margin: 50px 0;
-            border: 1px solid #3c43c9;
-            border-radius: 5px;
-            background-color: #b4d8f0;
-            padding: 20px;
-          }
-    
-          .signup-form input[type="text"],
-          .signup-form input[type="password"],
-          .signup-form input[type="email"] {
-            width: 100%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            box-sizing: border-box;
-            border: 1px solid #3c43c9;
-            border-radius: 4px;
-            font-size: 16px;
-          }
-    
-          .signup-form button {
-            width: 100%;
-            background-color: #3c43c9; 
-            color: white;
-            padding: 14px 20px;
-            margin: 8px 0;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-          }
-    
-          .signup-form button:hover {
-            background-color: #0066b2; 
-          }
-    
-          .signup-form select {
-            width: 100%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            box-sizing: border-box;
-            border: 1px solid #3c43c9;
-            border-radius: 4px;
-            font-size: 16px;
-          }
-        
-    
-          .signup-link {
-            text-align: center;
-            margin-top: 20px;
-            color: #888;
-            text-decoration: none;
-            font-size: 14px;
-          }
+.goals-table th,
+.goals-table td {
+  border: 1px solid #3c43c9;
+  padding: 12px 20px;
+  text-align: left;
+}
 
-          .goal-form {
-            width: 600px;
-            margin: 50px 0;
-            border: 1px solid #3c43c9;
-            border-radius: 5px;
-            background-color: #b4d8f0;
-            padding: 20px;
-          }
-    
-          .goal-form label {
-            font-weight: bold;
-            color: #0066b2;
-          }
-    
-          .goal-form input[type="text"],
-          .goal-form textarea {
-            width: 100%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            box-sizing: border-box;
-            border: 1px solid #3c43c9;
-            border-radius: 4px;
-            font-size: 16px;
-          }
-    
-          .goal-form input[type="date"] {
-            width: 100%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            box-sizing: border-box;
-            border: 1px solid #3c43c9;
-            border-radius: 4px;
-            font-size: 16px;
-        }
-    
-          .goal-form button {
-            
-            width: 100%;
-            background-color: #3c43c9; /* TU Delft light blue color */
-            color: white;
-            padding: 14px 20px;
-            margin: 8px 0;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-          }
-    
-          .goal-form button:hover {
-            background-color: #3c43c9; /* TU Delft light blue color, slightly darker */
-          }
+.add-goal-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    background-color: #3c43c9;
+    color: white;
+    padding: 14px 20px;
+    margin: 50px auto; /* change this from margin: 50px 0; */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
-          .round-button {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, 500%);
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background-color: #3c43c9;
-            color: white;
-            line-height: 0px;
-            text-align: center;
-            font-size: 40px;
-            cursor: pointer;
-          }
-    
-          .container input[type="text"] {
-            width: 100%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            box-sizing: border-box;
-            border: 1px solid #3c43c9;
-            border-radius: 4px;
-            font-size: 16px;
-        }
-          
-        .Go-back {
-            text-align: left; /* aligns the element to the center of the page */
-        }
-    
-        .finish {
-            text-align: right; /* aligns the element to the center of the page */
-        }
-    
-        .large-input {
-            font-size: 20px;
-            padding: 16px 24px;
-            margin: 12px 0;
-            width: 80%;
-        }
-    
-        .container input[type="checkbox"] {
-            border: 2px solid #3c43c9;
-            background-color: #b4d8f0;
-            
-        }
-          
-    
-        .container label {
-            color: #3c43c9;
-            font-size: 18px;
-        }
-    
 
-      
+.prog{
+  display: flex;
+  justify-content: center; /* centers the content horizontally */
+}
+
+.progress-bar {
+  width: 60%;
+  height: 20px;
+  background-color: #ddd;
+  border: 1px solid #3c43c9;
+  border-radius: 5px;
+  overflow: hidden;
+}
+  
+.progress-bar-fill {
+  height: 100%;
+  background-color: #3c43c9;
+  transition: width 0.3s ease-in-out;
+}
+
+
+.goals-table th {
+  background-color: #3c43c9;
+  color: white;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #3c43c9;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.signup-form {
+  width: 300px;
+  margin: 50px 0;
+  border: 1px solid #3c43c9;
+  border-radius: 5px;
+  background-color: #b4d8f0;
+  padding: 20px;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="password"],
+.signup-form input[type="email"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #3c43c9;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.signup-form button {
+  width: 100%;
+  background-color: #3c43c9; 
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.signup-form button:hover {
+  background-color: #0066b2; 
+}
+
+.signup-form select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #3c43c9;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+
+.signup-link {
+  text-align: center;
+  margin-top: 20px;
+  color: #888;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.goal-form {
+  width: 600px;
+  margin: 50px 0;
+  border: 1px solid #3c43c9;
+  border-radius: 5px;
+  background-color: #b4d8f0;
+  padding: 20px;
+}
+
+.goal-form label {
+  font-weight: bold;
+  color: #0066b2;
+}
+
+.goal-form input[type="text"],
+.goal-form textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #3c43c9;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.goal-form input[type="date"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #3c43c9;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.goal-form button {
+  
+  width: 100%;
+  background-color: #3c43c9; /* TU Delft light blue color */
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.goal-form button:hover {
+  background-color: #3c43c9; /* TU Delft light blue color, slightly darker */
+}
+
+.round-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 500%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #3c43c9;
+  color: white;
+  line-height: 0px;
+  text-align: center;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.container input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #3c43c9;
+  border-radius: 4px;
+  font-size: 16px;
+}
+  
+.Go-back {
+  text-align: left; /* aligns the element to the center of the page */
+}
+
+.finish {
+  text-align: right; /* aligns the element to the center of the page */
+}
+
+.large-input {
+  font-size: 20px;
+  padding: 16px 24px;
+  margin: 12px 0;
+  width: 80%;
+}
+
+.container input[type="checkbox"] {
+  border: 2px solid #3c43c9;
+  background-color: #b4d8f0;
+    
+}
+
+.container label {
+  color: #3c43c9;
+  font-size: 18px;
+}
+
+
+
 
