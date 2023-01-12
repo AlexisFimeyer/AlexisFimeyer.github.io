@@ -59,7 +59,7 @@ button {
   font-weight: bold;
 }
 
-.all-form button:hover {
+button:hover {
   background-color: #2f3491; 
 }
 
