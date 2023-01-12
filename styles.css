@@ -2,6 +2,7 @@
 body {
   background-color:#b4d8f0;
   font-family: Arial, sans-serif;
+  color: #3c43c9;
 }
 
 .container {
@@ -10,17 +11,31 @@ body {
   align-items: center;
 }
 
-.login-form {
+.goal-form.all-form {
+  width: 600px;
+}
+
+.all-form input[type="checkbox"] {
+  border: 2px solid #3c43c9;
+  background-color: #b4d8f0;
+}
+
+.all-form {
   width: 300px;
   margin: 50px 0;
   border: 1px solid #3c43c9;
   border-radius: 5px;
   background-color: #b4d8f0;
   padding: 20px;
+  font-weight: bold;
 }
 
-.login-form input[type="text"],
-.login-form input[type="password"] {
+.all-form input[type="text"],
+.all-form input[type="date"],
+.all-form input[type="email"],
+.all-form input[type="password"],
+.all-form select,
+.all-form textarea {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -28,6 +43,23 @@ body {
   border: 1px solid #3c43c9;
   border-radius: 4px;
   font-size: 16px;
+}
+
+.all-form button {
+  width: 100%;
+  background-color: #3c43c9; 
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.all-form button:hover {
+  background-color: #2f3491; 
 }
 
 .modify-button,
@@ -42,26 +74,11 @@ body {
   cursor: pointer;
 }
 
-.login-form button {
-  width: 100%;
-  background-color: #3c43c9; 
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.login-form button:hover {
-  background-color: #2f3491; 
-}
-
 .signup-link {
-  color: #3c43c9;
   font-size: 14px;
   text-align: center;
   margin-top: 20px;
+  font-weight: bold;
 }
 
 .signup-link a {
@@ -73,7 +90,6 @@ h1 {
   padding: 30px 0;
   text-align: center;
   font-size: 40px;
-  color: #3c43c9;
 }
 
 img {
@@ -136,162 +152,31 @@ img {
   color: white;
 }
 
-.input-field {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: 1px solid #3c43c9;
-  border-radius: 4px;
-  font-size: 16px;
-}
-
-.signup-form {
-  width: 300px;
-  margin: 50px 0;
-  border: 1px solid #3c43c9;
-  border-radius: 5px;
-  background-color: #b4d8f0;
-  padding: 20px;
-}
-
-.signup-form input[type="text"],
-.signup-form input[type="password"],
-.signup-form input[type="email"] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: 1px solid #3c43c9;
-  border-radius: 4px;
-  font-size: 16px;
-}
-
-.signup-form button {
-  width: 100%;
-  background-color: #3c43c9; 
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.signup-form button:hover {
-  background-color: #0066b2; 
-}
-
-.signup-form select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: 1px solid #3c43c9;
-  border-radius: 4px;
-  font-size: 16px;
-}
-
-.goal-form {
-  width: 600px;
-  margin: 50px 0;
-  border: 1px solid #3c43c9;
-  border-radius: 5px;
-  background-color: #b4d8f0;
-  padding: 20px;
-}
-
-.goal-form label {
-  font-weight: bold;
-  color: #0066b2;
-}
-
-.goal-form input[type="text"],
-.goal-form textarea {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: 1px solid #3c43c9;
-  border-radius: 4px;
-  font-size: 16px;
-}
-
-.goal-form input[type="date"] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: 1px solid #3c43c9;
-  border-radius: 4px;
-  font-size: 16px;
-}
-
-.goal-form button {
-  
-  width: 100%;
-  background-color: #3c43c9; /* TU Delft light blue color */
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.goal-form button:hover {
-  background-color: #3c43c9; /* TU Delft light blue color, slightly darker */
-}
-
 .round-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 500%);
   width: 50px;
   height: 50px;
   border-radius: 50%;
   background-color: #3c43c9;
   color: white;
-  line-height: 0px;
-  text-align: center;
   font-size: 40px;
   cursor: pointer;
 }
-
-.container input[type="text"] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: 1px solid #3c43c9;
-  border-radius: 4px;
-  font-size: 16px;
-}
   
-.Go-back {
-  text-align: left; /* aligns the element to the center of the page */
+.target-parent {
+  display: flex;
+  justify-content: center;
 }
 
-.finish {
-  text-align: right; /* aligns the element to the center of the page */
+.link {
+  width: 300px;
+  text-align: center;
 }
 
-.large-input {
-  font-size: 20px;
-  padding: 16px 24px;
-  margin: 12px 0;
-  width: 80%;
-}
-
-.container input[type="checkbox"] {
-  border: 2px solid #3c43c9;
-  background-color: #b4d8f0;
-    
+.link a {
+  color: #20008b;
 }
 
 .container label {
-  color: #3c43c9;
   font-size: 18px;
 }
 

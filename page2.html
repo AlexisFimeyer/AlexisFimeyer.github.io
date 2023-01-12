@@ -4,43 +4,40 @@
     <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
+    <h1>Sign Up</h1>
     <div class="container">
-      <h1>Sign Up</h1>
-      <form class="signup-form" action="overview.html" method="post">
-        <label for="username"><b>Username:</b></label><br>
-        <input type="text" id="username" name="username" required><br>
-        <label for="name"><b>Name:</b></label><br>
-        <input type="text" id="name" name="name" required><br>
-        <label for="address"><b>Address:</b></label><br>
-        <input type="text" id="address" name="address" required><br>
-        <label for="country"><b>Country:</b></label><br>
-        <input type="text" id="country" name="country" required><br>
-        <label for="ZIP code"><b>ZIP code:</b></label><br>
-        <input type="text" id="ZIP code" name="ZIP code" required><br>
-        <label for="gender"><b>Select sex:</b></label>
+      <form class="all-form" action="overview.html" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" required>
+        <label for="ZIP code">ZIP code:</label>
+        <input type="text" id="ZIP code" name="ZIP code" required>
+        <label for="gender">Select sex:</label>
         <select name="gender" required>
-	      <option value="male">Male</option>
-	      <option value="female">Female</option>
-	      <option value="other">Other</option>
-        </select><br>
-        <label for="Language"><b>Language:</b></label><br>
-        <input type="text" id="Language" name="Language" required><br>
-        <label for="About"><b>About:</b></label><br>
-        <input type="text" id="About" name="About" required><br>
-        <label for="email"><b>Email:</b></label><br>
-        <input type="email" id="email" name="email" required><br>
-        <label for="password"><b>Password:</b></label><br>
-        <input type="password" id="password" name="password" required><br>
-        <label for="confirm-password"><b>Confirm Password:</b></label><br>
-        <input type="password" id="confirm-password" name="confirm-password" required><br><br>
-        <button type="submit"><b style="font-size: 17;">Sign up</b></button>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+        <label for="Language">Language:</label>
+        <input type="text" id="Language" name="Language" required>
+        <label for="About">About:</label>
+        <input type="text" id="About" name="About" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+        <button type="submit">Sign up</button>
       </form> 
     </div>
     <div class="signup-link">
-      <b style="color: #3c43c9; font-size: 17;">Already have an account?</b>
-      <a href="index.html" style="color: rgb(0, 0, 0); font-size: 17;">
-          <b><u style="color: #20008b;">Login<u></b>
-      </a>
+      Already have an account? <a href="index.html">Login
     </div>
   </body>
 </html>
