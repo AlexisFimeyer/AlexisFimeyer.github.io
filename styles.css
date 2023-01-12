@@ -22,12 +22,13 @@ body {
 
 .all-form {
   width: 300px;
-  margin: 50px 0;
+  margin: 20px 0;
   border: 1px solid #3c43c9;
   border-radius: 5px;
   background-color: #b4d8f0;
   padding: 20px;
   font-weight: bold;
+  font-size: 18px;
 }
 
 .all-form input[type="text"],
@@ -45,7 +46,7 @@ body {
   font-size: 16px;
 }
 
-.all-form button {
+button {
   width: 100%;
   background-color: #3c43c9; 
   color: white;
@@ -62,16 +63,10 @@ body {
   background-color: #2f3491; 
 }
 
-.modify-button,
-.delete-button {
-  width: 100%;
-  background-color: #3c43c9; 
-  color: white;
+.modify.button,
+.delete.button {
   padding: 4px 2px;
   margin: 4px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
 }
 
 .signup-link {
@@ -86,14 +81,11 @@ body {
 }
 
 h1 {
-  margin: 0;
-  padding: 30px 0;
   text-align: center;
   font-size: 40px;
 }
 
 img {
-  display: inline-block;
   vertical-align: middle;
 }
 
@@ -101,41 +93,22 @@ img {
   width: 600px;
   border: 1px solid #3c43c9;
   border-radius: 5px;
-  background-color: #b4d8f0;
   margin: 50px 0;
+  font-size: 16px;
+  border-collapse: collapse;
 }
 
 .goals-table th,
 .goals-table td {
   border: 1px solid #3c43c9;
   padding: 12px 20px;
-  text-align: left;
-}
-
-.add-goal-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    background-color: #3c43c9;
-    color: white;
-    padding: 14px 20px;
-    margin: 50px auto; /* change this from margin: 50px 0; */
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.prog{
-  display: flex;
-  justify-content: center; /* centers the content horizontally */
-  margin-top: 200px;
 }
 
 .progress-bar {
+  margin-top: 200px;
   width: 60%;
   height: 20px;
-  background-color: #ddd;
+  background-color: white;
   border: 1px solid #3c43c9;
   border-radius: 5px;
   overflow: hidden;
@@ -143,6 +116,7 @@ img {
   
 .progress-bar-fill {
   height: 100%;
+  width: 75%;
   background-color: #3c43c9;
   transition: width 0.3s ease-in-out;
 }
@@ -152,34 +126,31 @@ img {
   color: white;
 }
 
+#goal-button {
+  margin-top: 50px;
+  width: 200px;
+}
+
 .round-button {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #3c43c9;
-  color: white;
   font-size: 40px;
-  cursor: pointer;
+  padding: 0;
+  margin: 0;
 }
   
 .target-parent {
+  margin-top: 20px;
   display: flex;
   justify-content: center;
 }
 
 .link {
-  width: 300px;
+  width: 200px;
   text-align: center;
 }
 
 .link a {
   color: #20008b;
 }
-
-.container label {
-  font-size: 18px;
-}
-
-
-
-
