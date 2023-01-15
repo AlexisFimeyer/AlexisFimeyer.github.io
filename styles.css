@@ -15,6 +15,11 @@ body {
   width: 600px;
 }
 
+.target.all-form select {
+  width: 50%;
+  padding: 5px;
+}
+
 .all-form input[type="checkbox"] {
   border: 2px solid #3c43c9;
   background-color: #b4d8f0;
