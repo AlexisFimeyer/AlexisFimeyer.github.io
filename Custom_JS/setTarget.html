@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+   </head>
+<body>
+    <h1>Set Targets</h1>
+  <div class="container">
+    <form class="target all-form">
+        <label for="target">Target:</label>
+        <input type="text" id="target" name="target" required>
+        <label for="type">Type:</label>
+        <select name="type" required> 
+          <option value="boolean">boolean</option>
+          <option value="numeric">numeric</option>
+          <option value="monetary">monetary</option>
+          <option value="other">other</option>
+        </select><br>
+        <label for="amount">Amount: (remove in case of boolean)</label>
+        <input type="text" id="amount" name="amount" required>
+        <label for="amount-reached">Amount reached (remove in case of boolean):</label>
+        <input type="text" id="amount-reached" name="amount-reached" required>
+        <input type="checkbox" id="done1" name="done" value="done">
+        <label for="done1">Done</label>
+        <br>
+        <br>
+        <label for="target">Target:</label>
+        <input type="text" id="target" name="target" required>
+        <label for="type">Type:</label>
+        <select name="type" required> 
+          <option value="boolean">boolean</option>
+          <option value="numeric">numeric</option>
+          <option value="monetary">monetary</option>
+          <option value="other">other</option>
+        </select><br>
+        <label for="amount">Amount: (remove in case of boolean)</label>
+        <input type="text" id="amount" name="amount" required>
+        <label for="amount-reached">Amount reached (remove in case of boolean):</label>
+        <input type="text" id="amount-reached" name="amount-reached" required>
+        <input type="checkbox" id="done2" name="done" value="done">
+        <label for="done2">Done</label>
+    </form>
+  </div>
+  <div class="target-parent"> 
+    <div class = "link">
+      <a href="setGoal.html">Go back
+    </div>
+    <div>
+      <button class="round-button">+</button>
+    </div>
+    <div class="link">
+      <a href="overview.html">Finish
+    </div>
+  </div>
+
+</body>
+</html>

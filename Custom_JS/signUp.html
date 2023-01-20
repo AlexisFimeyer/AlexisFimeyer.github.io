@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>Sign Up</h1>
+    <div class="container">
+      <form class="all-form" onsubmit="submitForm(); return false">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" oninput="checkUsername()" required>
+        <img src="" id="username-check" style="display:none">
+        <p id="username-message"></p>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" oninput="checkName()" required>
+        <img src="" id="name-check" style="display:none">
+        <p id="name-message"></p>
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" oninput="checkAddress()">
+        <img src="" id="address-check" style="display:none">
+        <p id="address-message"></p>
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" oninput="checkCountry()"required>
+        <img src="" id="country-check" style="display:none">
+        <p id="country-message"></p>
+        <label for="ZIP code">ZIP code:</label>
+        <input type="text" id="ZIP code" name="ZIP code" oninput="checkZip()" required>
+        <img src="" id="zip-check" style="display:none">
+        <p id="zip-message"></p>
+        <label for="gender">Select sex:</label>
+        <select name="gender" required>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+        <label for="Language">Language:</label>
+        <input type="text" id="Language" name="Language" oninput="checkLanguage()" required>
+        <img src="" id="Language-check" style="display:none">
+        <p id="Language-message"></p>
+        <label for="About">About:</label>
+        <input type="text" id="About" name="About" oninput="checkAbout()">
+        <img src="" id="About-check" style="display:none">
+        <p id="About-message"></p>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" oninput="checkEmail()" required>
+        <p id="email-message"></p>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" oninput="checkPassword()" required>
+        <img src="" id="password-check" style="display:none">
+        <p id="password-message"></p>
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" oninput="checkPasswords()" required>
+        <img src="" id="password-confirm-check" style="display:none">
+        <p id="confirm-password-message"></p>
+        <button type="submit">Sign up</button>
+      </form> 
+    </div>
+    <div class="signup-link">
+      Already have an account? <a href="index.html">Login
+    </div>
+  </body>
+</html>
