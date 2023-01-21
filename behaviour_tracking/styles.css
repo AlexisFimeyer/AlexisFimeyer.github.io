@@ -1,0 +1,165 @@
+
+body {
+  background-color:#b4d8f0;
+  font-family: Arial, sans-serif;
+  color: #3c43c9;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.goal-form.all-form {
+  width: 600px;
+}
+
+.target.all-form select {
+  width: 50%;
+  padding: 5px;
+}
+
+.all-form input[type="checkbox"] {
+  border: 2px solid #3c43c9;
+  background-color: #b4d8f0;
+}
+
+.all-form {
+  width: 300px;
+  margin: 20px 0;
+  border: 1px solid #3c43c9;
+  border-radius: 5px;
+  background-color: #b4d8f0;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.all-form input[type="text"],
+.all-form input[type="date"],
+.all-form input[type="email"],
+.all-form input[type="password"],
+.all-form select,
+.all-form textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #3c43c9;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  width: 100%;
+  background-color: #3c43c9; 
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #2f3491; 
+}
+
+.modify.button,
+.delete.button {
+  padding: 4px 2px;
+  margin: 4px 0;
+}
+
+.signup-link {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.signup-link a {
+  color: #20008b;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.goals-table {
+  width: 600px;
+  border: 1px solid #3c43c9;
+  border-radius: 5px;
+  margin: 50px 0;
+  font-size: 16px;
+  border-collapse: collapse;
+}
+
+.goals-table th,
+.goals-table td {
+  border: 1px solid #3c43c9;
+  padding: 12px 20px;
+}
+
+.progress-bar {
+  margin-top: 200px;
+  width: 60%;
+  height: 20px;
+  background-color: white;
+  border: 1px solid #3c43c9;
+  border-radius: 5px;
+  overflow: hidden;
+}
+  
+.progress-bar-fill {
+  height: 100%;
+  width: 75%;
+  background-color: #3c43c9;
+  transition: width 0.3s ease-in-out;
+}
+
+.goals-table th {
+  background-color: #3c43c9;
+  color: white;
+}
+
+#goal-button {
+  margin-top: 50px;
+  width: 200px;
+}
+
+.round-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 40px;
+  padding: 0;
+  margin: 0;
+}
+  
+.target-parent {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.link {
+  width: 200px;
+  text-align: center;
+}
+
+.link a {
+  color: #20008b;
+}
+
+#behaviour {
+  display: none;
+}
