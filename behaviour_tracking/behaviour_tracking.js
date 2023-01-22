@@ -76,8 +76,9 @@ function buttonClicked() {
         behaviourList.style.display = "block";
     }
 }
-
+// counts the number of typed char for each field
 function charTyped(){
+    // get the input of each field and store it in a variable
     var username = document.getElementById("username").value;
     var name = document.getElementById("name").value;
     var address = document.getElementById("address").value;
@@ -88,6 +89,7 @@ function charTyped(){
     var email = document.getElementById("email").value;
     var password = document.getElementById("password").value;
     var confirmPassword = document.getElementById("confirm-password").value;
+    // get the length of each of the field and store it in a variable
     var usernameLength = username.length;
     var nameLength = name.length;
     var addressLength = address.length;
@@ -98,6 +100,7 @@ function charTyped(){
     var emailLength = email.length;
     var passwordLength = password.length;
     var confirmPasswordLength = confirmPassword.length;
+    // replace each of the values inside the list to be displayed
     document.getElementById("behaviour").children[3].textContent = "number of characters typed for username : " + usernameLength;
     document.getElementById("behaviour").children[4].textContent = "number of characters typed for name : " + nameLength;
     document.getElementById("behaviour").children[5].textContent = "number of characters typed for address : " + addressLength;
