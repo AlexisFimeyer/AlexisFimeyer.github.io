@@ -76,3 +76,37 @@ function buttonClicked() {
         behaviourList.style.display = "block";
     }
 }
+
+function charTyped(){
+    var username = document.getElementById("username").value;
+    var name = document.getElementById("name").value;
+    var address = document.getElementById("address").value;
+    var country = document.getElementById("country").value;
+    var zipCode = document.getElementById("ZIP code").value;
+    var language = document.getElementById("Language").value;
+    var about = document.getElementById("About").value;
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+    var confirmPassword = document.getElementById("confirm-password").value;
+    var usernameLength = username.length;
+    var nameLength = name.length;
+    var addressLength = address.length;
+    var countryLength = country.length;
+    var zipCodeLength = zipCode.length;
+    var languageLength = language.length;
+    var aboutLength = about.length;
+    var emailLength = email.length;
+    var passwordLength = password.length;
+    var confirmPasswordLength = confirmPassword.length;
+    document.getElementById("behaviour").children[3].textContent = "number of characters typed for username : " + usernameLength;
+    document.getElementById("behaviour").children[4].textContent = "number of characters typed for name : " + nameLength;
+    document.getElementById("behaviour").children[5].textContent = "number of characters typed for address : " + addressLength;
+    document.getElementById("behaviour").children[6].textContent = "number of characters typed for country : " + countryLength;
+    document.getElementById("behaviour").children[7].textContent = "number of characters typed for zipCode : " + zipCodeLength;
+    document.getElementById("behaviour").children[8].textContent = "number of characters typed for language : " + languageLength;
+    document.getElementById("behaviour").children[9].textContent = "number of characters typed for about : " + aboutLength;
+    document.getElementById("behaviour").children[10].textContent = "number of characters typed for email : " + emailLength;
+    document.getElementById("behaviour").children[11].textContent = "number of characters typed for password : " + passwordLength;
+    document.getElementById("behaviour").children[12].textContent = "number of characters typed for confirmPassword : " + confirmPasswordLength;
+    
+}
