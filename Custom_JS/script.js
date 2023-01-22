@@ -1,15 +1,27 @@
+// every method (appart form the regex) is the same that's why i will only comment this one
 function checkUsername() {
+  // get the element of the form with id : username 
   var username = document.getElementById("username");
+  // set the regex to which the element has to comply 
   var usernameRegex = /(^[A-Z])(?:.{4,10})([0-9]|\W)$/;
+  // set the variable for the mesage to be displayed in case of good/wrong input
   var message = document.getElementById("username-message");
+  // check if the input complies with the regex 
   if (usernameRegex.test(username.value)) {
+    // if it does show the logo to indicate that it is good
     username.classList.add("valid-input");
+    // make the border of the inputfield green
     username.style.borderColor = "green";
+    // make the message null as there is nothing to display since the input is good
     message.innerHTML = null;
   } else {
+    // if it does not comply change the message so it indicates it
     message.innerHTML = "Username is not valid.";
+    // make the message red
     message.style.color = "red";
+    // make the border of the inputfield red
     username.style.borderColor = "red";
+    // remove the checkmark
     username.classList.remove("valid-input");
   }
 }
@@ -118,12 +130,13 @@ function checkPassword() {
     password.classList.remove("valid-input");
   }
 }
-
+// this method doesn't check if an input complies with a regex but rather if the two passwords (password and confirmPassword are the same) 
 function checkPasswords() {
   var password = document.getElementById("password").value;
   var confirmPassword = document.getElementById("confirm-password").value;
   var confirmPassword1 = document.getElementById("confirm-password");
   var message = document.getElementById("confirm-password-message");
+  // here is the only part that changes, we check the value of both input for the password.
   if (password !== confirmPassword) {
     message.innerHTML = "Passwords do not match";
     message.style.color = "red";
@@ -137,11 +150,13 @@ function checkPasswords() {
     return true
   }
 }
-
+// this function checks if both passwords entered are the same
 function submitForm() {
+  // if they aren't the form will not submit
   if (!checkPasswords()) {
     return false;
   }
+  // if they are the same then it will redirect the user to the overview page
   window.location.href = 'overview.html';
   return true;
 }
