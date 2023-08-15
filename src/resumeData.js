@@ -11,7 +11,8 @@ let resumeData = {
     },
   ],
   aboutme:
-    "I am currently a second year student at TUDelft and pursuing my bachelor in computer science and engineering. Currently diving deeper into Machine Learning and Big Data Processing with the data variant.",
+    "I am currently a second year student at TUDelft and pursuing my bachelor in computer science and engineering.",
+  
   address: "Netherlands",
   website: "https://AlexisFimeyer.github.io",
   education: [
