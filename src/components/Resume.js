@@ -35,13 +35,13 @@ export default class Resume extends Component {
         <div className="row work">
           <div className="three columns header-col">
             <h1>
-              <span>Work</span>
+              <span>Certificates</span>
             </h1>
           </div>
 
           <div className="nine columns main-col">
-            {resumeData.work &&
-              resumeData.work.map((item) => {
+            {resumeData.certificates &&
+              resumeData.certificates.map((item) => {
                 return (
                   <div className="row item">
                     <div className="twelve columns">
