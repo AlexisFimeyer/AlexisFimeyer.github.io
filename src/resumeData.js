@@ -27,7 +27,7 @@ let resumeData = {
       specialization: "Data",
       MonthOfPassing: "July",
       YearOfPassing: "2023",
-      Achievements: "Second year completed. Set to do a minor in Quantum Science, Information and Computing during my third year.",      
+      Achievements: "Second year completed. Set to do a minor in Quantum Science, Quantum Information and Quantum Computing during my third year.",      
     },
     {
       UniversityName: "École Européenne de Bruxelles II",
