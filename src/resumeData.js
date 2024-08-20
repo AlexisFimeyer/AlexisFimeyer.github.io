@@ -11,30 +11,37 @@ let resumeData = {
     },
   ],
   aboutme:
-    "I am currently a second year student at TUDelft and pursuing my bachelor in computer science and engineering, following the data variant.",
+    "I am currently a second year student at TUDelft and pursuing a bachelor in computer science and engineering, following the data variant, with a minor in quantum computing, quantum information and quantum technology.",
   address: "Netherlands",
   website: "https://AlexisFimeyer.github.io",
   education: [
+    {
+      UniversityName: "Delft University of Technology",
+      specialization: "Minor Quantum Computing, Quantum Information and Quantum Technology.",
+      MonthOfPassing: "Sept-Feb",
+      YearOfPassing: "2024-2025",
+      Achievements: "Minor focusing on the mathematical foundations of quantum mechanics, quantum sensing and measurement techniques, and advanced topics like semiconductor and superconductor quantum bits. The minor also covers quantum communication and computation, providing a comprehensive understanding of the emerging field of quantum technology.",      
+    },
     {
       UniversityName: "BeDataDriven",
       specialization: "Software Engineer Intern",
       MonthOfPassing: "April-June",
       YearOfPassing: "2024",
-      Achievements: "Worked on an AI powered spreadsheet importer for ActivityInfo.",      
+      Achievements: "Worked on developping an AI powered spreadsheet importer for ActivityInfo.",      
     },
     {
       UniversityName: "Delft University of Technology",
-      specialization: "Data",
-      MonthOfPassing: "July",
-      YearOfPassing: "2023",
-      Achievements: "Second year completed. Set to do a minor in Quantum Science, Quantum Information and Quantum Computing during my third year.",      
+      specialization: "Bachelor of Computer Science and Engineering - Data Variant",
+      MonthOfPassing: "Sept-July",
+      YearOfPassing: "2022-2025",
+      Achievements: "Second year completed.",      
     },
     {
       UniversityName: "École Européenne de Bruxelles II",
       specialization: "Mathematics, physics and chemistry",
-      MonthOfPassing: "July",
-      YearOfPassing: "2022",
-      Achievements: "European baccalaureate",
+      MonthOfPassing: "Sept-July",
+      YearOfPassing: "2008-2022",
+      Achievements: "European Baccalaureate",
     },
   ],
   certificates: [
@@ -91,6 +98,13 @@ let resumeData = {
       imgurl: "/images/project-2.png",
       url:
         "https://github.com/AlexisFimeyer/Assembly-projects/tree/main/BitMap%20Encoder",
+    },
+    {
+      name: "Python Synthetic Data Generator with Ollama",
+      description: "Container",
+      imgurl: "/images/Datagen.png",
+      url:
+        "https://github.com/AlexisFimeyer/Synthetic-Data-Agent-Generator",
     },
     {
       name: "SHA-1 implemented in Assembly",
