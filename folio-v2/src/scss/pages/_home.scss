@@ -1,0 +1,1247 @@
+%padding-home {
+  padding-left: 4rem;
+  padding-right: 4rem;
+
+  @include media("<=phone") {
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+  }
+}
+
+.home {
+  padding: 2.4rem 0;
+  visibility: hidden;
+  &__nav {
+    @extend %padding-home;
+    margin-bottom: 6.4rem;
+    display: flex;
+    justify-content: space-between;
+    @extend %description-12;
+    line-height: 1.4;
+
+    .hide-mobile {
+      @include media("<=phone") {
+        display: none;
+      }
+    }
+
+    .hide-desktop {
+      @include media(">phone") {
+        display: none;
+      }
+    }
+
+    .nav__button {
+      flex-shrink: 0;
+      flex-grow: 0;
+    }
+
+    &__left,
+    &__right {
+      text-transform: uppercase;
+      justify-content: space-between;
+
+      @include media(">phone") {
+        display: flex;
+      }
+    }
+
+    &__left {
+      max-width: 49rem;
+      width: 100%;
+      margin-right: 5rem;
+
+      @include media("<=phone") {
+        margin-right: 2rem;
+        max-width: unset;
+      }
+    }
+
+    &__right {
+      max-width: 325px;
+      width: 100%;
+
+      @include media("<=phone") {
+        max-width: 175px;
+        width: 100%;
+        margin-left: auto;
+
+        br {
+          display: none;
+        }
+      }
+    }
+
+    .nav {
+      &__folio,
+      &__availability {
+        color: $col-boulder;
+
+        @include media("<=phone") {
+          margin-bottom: 2.4rem;
+
+          br {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  &__hero {
+    margin-bottom: 9.6rem;
+    @extend %padding-home;
+
+    .hero {
+      &__title {
+        line-height: 0.9;
+        color: $col-boulder;
+
+        h1 {
+          &.desktop {
+            @include media("<=phone") {
+              display: none;
+            }
+          }
+
+          &.mobile {
+            @extend %title-328;
+            letter-spacing: -0.05em;
+            word-wrap: break-word;
+            @include media(">phone") {
+              display: none;
+            }
+          }
+        }
+
+        .hero__hover {
+          transition: color 0.2s;
+
+          @media (any-pointer: fine) {
+            &:hover {
+              color: $col-orange;
+            }
+          }
+        }
+
+        &__left,
+        &__right,
+        &__dash {
+          display: inline-block;
+          @extend %title-328;
+          letter-spacing: -0.105em;
+        }
+
+        &__dash {
+          transform: scaleX(1.05);
+          will-change: transform;
+
+          &.desktop {
+            @include media("<=tablet") {
+              display: none;
+            }
+          }
+
+          &.tablet {
+            @include media(">tablet") {
+              display: none;
+            }
+          }
+        }
+
+        &__top {
+          display: flex;
+          justify-content: space-between;
+          padding-right: 3rem;
+        }
+
+        &__top,
+        &__bottom {
+          width: 100%;
+
+          &.overflow {
+            display: inline-flex;
+            width: 100%;
+            overflow: hidden;
+          }
+        }
+
+        &__bottom {
+          justify-content: space-between;
+
+          @include media(">tablet") {
+            display: flex;
+          }
+        }
+        .bottom__left {
+          @extend %title-328;
+          letter-spacing: -0.105em;
+          flex-shrink: 0;
+        }
+
+        .bottom__right {
+          @extend %description-16;
+          position: relative;
+          z-index: 1;
+          max-width: 32.5rem;
+          width: 100%;
+          padding: 2rem 0 5rem;
+          display: flex;
+          flex-direction: column;
+
+          @include media("<=tablet") {
+            max-width: 55rem;
+            padding-bottom: 0;
+          }
+
+          @include media("<=phone") {
+            max-width: 255px;
+            margin-left: auto;
+          }
+        }
+      }
+
+      &__paragraph {
+        color: $col-gray;
+
+        span {
+          text-transform: uppercase;
+        }
+
+        .first-word {
+          @extend %description-12;
+          color: $col-boulder;
+        }
+      }
+
+      &__scroll {
+        margin-top: auto;
+        color: $col-boulder;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include media("<=tablet") {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__projects {
+    @extend %padding-home;
+
+    &__line {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      visibility: hidden;
+      span {
+        height: 2px;
+        background: $col-boulder;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        display: inline-block;
+        transform-origin: left top;
+      }
+
+      &.right {
+        span {
+          transform-origin: right top;
+        }
+      }
+    }
+  }
+
+  &__content {
+    padding-top: 24rem;
+    padding-bottom: 24rem;
+    @extend %padding-home;
+
+    @include media("<=phone") {
+      padding-top: 16rem;
+      padding-bottom: 16rem;
+    }
+
+    @include media(">tablet") {
+      text-align: center;
+    }
+
+    &__title {
+      @extend %description-12;
+      text-transform: uppercase;
+      color: $col-boulder;
+      margin-bottom: 2.4rem;
+    }
+
+    &__desc {
+      @extend %description-32;
+      max-width: 95rem;
+      width: 100%;
+      @extend %links;
+
+      @include media(">tablet") {
+        margin: 0 auto;
+      }
+
+      .contact-scroll {
+        color: $col-boulder;
+        transition: color 0.3s;
+        background: transparent;
+        border: 0;
+        padding: 0;
+        @extend %description-32;
+        font-weight: 500;
+        cursor: pointer;
+
+        @media (any-pointer: fine) {
+          &:hover {
+            color: $col-orange;
+          }
+        }
+      }
+    }
+  }
+
+  &__stack {
+    max-width: 104.4rem;
+    margin-left: auto;
+    padding-top: 16rem;
+    padding-bottom: 24rem;
+    @extend %description-16;
+
+    @include media("<=phone") {
+      padding-top: 9.6rem;
+      padding-bottom: 16rem;
+    }
+
+    &__paragraph {
+      color: $col-gray;
+      max-width: 32.5rem;
+
+      @include media("<=tablet") {
+        max-width: 55rem;
+      }
+
+      @include media("<=phone") {
+        max-width: 35rem;
+        margin-left: auto;
+        padding-left: 1.6rem;
+        padding-right: 1.6rem;
+      }
+
+      span,
+      a {
+        color: $col-boulder;
+        text-transform: uppercase;
+      }
+
+      @extend %links;
+
+      .first-word {
+        @extend %description-12;
+      }
+    }
+  }
+
+  &__education {
+    @extend %padding-home;
+    padding-top: 24rem;
+    padding-bottom: 12rem;
+
+    @include media("<=phone") {
+      padding-top: 16rem;
+      padding-bottom: 8rem;
+    }
+
+    &__head {
+      @include media(">tablet") {
+        text-align: center;
+        max-width: 65rem;
+        margin: 0 auto 8rem;
+      }
+      margin-bottom: 6.4rem;
+    }
+
+    &__title {
+      @extend %description-16;
+      text-transform: uppercase;
+      color: $col-boulder;
+      margin-bottom: 2.4rem;
+      letter-spacing: 0.02em;
+      font-weight: 600;
+    }
+
+    &__tagline {
+      @extend %description-32;
+      color: $col-gray;
+      max-width: 95rem;
+      @extend %links;
+
+      @include media(">tablet") {
+        margin: 0 auto;
+      }
+    }
+
+    &__list {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      // vertical line
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0.8rem;
+        left: 1.2rem;
+        width: 2px;
+        background: $col-boulder;
+        transform-origin: top;
+        transform: scaleY(0);
+        transition: transform 0.9s cubic-bezier(0.19, 1, 0.22, 1);
+        
+        // Calculate height to end at the last item's content bottom
+        height: calc(100% - 6.4rem);
+
+        @include media("<=phone") {
+          height: calc(100% - 4.8rem);
+        }
+      }
+
+      &[data-timeline].is-visible::before {
+        transform: scaleY(1);
+      }
+    }
+  }
+
+  &__awards {
+    @extend %padding-home;
+    @extend %links;
+
+    justify-content: space-between;
+    max-width: 113rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 9.6rem;
+    padding-bottom: 9.6rem;
+
+    @include media(">tablet") {
+      display: flex;
+      padding-top: 24rem;
+      padding-bottom: 24rem;
+    }
+
+    &__top,
+    &__bottom {
+      justify-content: space-between;
+
+      @include media(">phone") {
+        display: flex;
+      }
+    }
+
+    .awards {
+      &__title {
+        @extend %description-12;
+        color: $col-boulder;
+        margin-bottom: 24px;
+      }
+
+      &__item {
+        @extend %description-16;
+        padding: 16px 0;
+        border-top: 2px solid $col-boulder;
+        position: relative;
+        transition: color 0.2s;
+
+        // &::after {
+        //   background: $col-orange;
+        //   content: "";
+        //   display: block;
+        //   height: 100%;
+        //   left: 0;
+        //   position: absolute;
+        //   top: 0;
+        //   transform: scaleY(0);
+        //   transform-origin: top;
+        //   transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+        //   width: 100%;
+        //   z-index: -1;
+        // }
+
+        // &:hover {
+        //   color: $col-black;
+
+        //   &::after {
+        //     transform: scaleY(1);
+        //     transform-origin: bottom;
+        //   }
+        // }
+      }
+    }
+
+    &__stack {
+      margin-bottom: 9.6rem;
+    }
+
+    &__left {
+      margin-bottom: 9.6rem;
+
+      @include media(">tablet") {
+        max-width: 55.5rem;
+        width: 100%;
+        margin-bottom: 0;
+      }
+    }
+
+    &__right {
+      @include media(">tablet") {
+        max-width: 32.5rem;
+        width: 100%;
+      }
+    }
+
+    .home__content {
+      &__title {
+        @extend %description-12;
+        text-transform: uppercase;
+        color: $col-boulder;
+      }
+
+      &__desc {
+        @extend %description-16;
+        max-width: 95rem;
+        width: 100%;
+        @extend %links;
+
+        a {
+          text-transform: uppercase;
+        }
+
+        .contact-scroll {
+          color: $col-boulder;
+          transition: color 0.3s;
+          background: transparent;
+          border: 0;
+          padding: 0;
+          @extend %description-16;
+          font-weight: 500;
+          cursor: pointer;
+
+          @media (any-pointer: fine) {
+            &:hover {
+              color: $col-orange;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__contact {
+    @include media(">tablet") {
+      padding-top: 8rem;
+    }
+
+    .line-wrapper {
+      @extend %padding-home;
+    }
+
+    &__desc {
+      @extend %description-32;
+      @extend %padding-home;
+      margin: 0;
+      margin-bottom: 6.4rem;
+
+      @include media(">phone") {
+        max-width: 44rem;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+      }
+    }
+
+    .marquee {
+      text-transform: uppercase;
+      overflow: hidden;
+
+      &__wrap {
+        &:hover {
+          .marquee__inner {
+            animation-play-state: paused;
+
+            &:hover {
+              .slide-up {
+                transform: translateY(0);
+
+                &::before {
+                  transform: translateY(0);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &__inner {
+        height: 100%;
+        width: fit-content;
+        align-items: center;
+        display: flex;
+        position: relative;
+        animation: marquee 25s linear infinite;
+        will-change: transform;
+        padding-top: 2.4rem;
+        padding-bottom: 1rem;
+
+        @include media(">phone") {
+          padding-top: 5.8rem;
+          padding-bottom: 2.3rem;
+        }
+
+        span {
+          white-space: nowrap;
+          padding-left: 2rem;
+          padding-right: 2rem;
+        }
+
+        .inner-span {
+          text-transform: uppercase;
+          @extend %title-160;
+          color: $col-boulder;
+          position: relative;
+          overflow: hidden;
+
+          .slide-up {
+            position: absolute;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            transform: translateY(100%);
+            transition: transform 275ms ease;
+            display: none;
+
+            @media (any-pointer: fine) {
+              display: inline-block;
+            }
+
+            &::before {
+              display: inline-block;
+              content: attr(data-content);
+              white-space: nowrap;
+              color: $col-orange;
+              transform: translateY(-100%);
+              transition: transform 275ms ease;
+            }
+          }
+        }
+      }
+
+      @keyframes marquee {
+        100% {
+          transform: translate3d(-50%, 0, 0);
+        }
+      }
+    }
+
+    &__email {
+      padding-top: 4.8rem;
+      padding-bottom: 7.2rem;
+      text-align: center;
+
+      @include media("<=phone") {
+        max-width: 255px;
+        width: 100%;
+        text-align: left;
+        margin-left: auto;
+        word-break: break-word;
+      }
+
+      .to-copy {
+        display: none;
+        @media (any-pointer: fine) {
+          display: block;
+          opacity: 0;
+          text-transform: uppercase;
+          transform: translateY(100%);
+          transition: opacity 0.3s, transform 0.3s;
+        }
+
+        @extend %description-16;
+
+        span {
+          padding: 5px 8px;
+          border: 2px solid $col-boulder;
+          border-radius: 45px;
+        }
+      }
+
+      .email {
+        @extend %description-32;
+        background: transparent;
+        border: 0;
+        font-weight: 500;
+        cursor: pointer;
+        color: $col-gray;
+        padding: 0;
+        margin-bottom: 1.6rem;
+
+        @include media("<=tablet") {
+          text-align: left;
+        }
+
+        @media (any-pointer: fine) {
+          &:hover {
+            color: $col-orange;
+          }
+        }
+
+        &:hover {
+          & + .to-copy {
+            transform: translateY(0);
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  /* ===============================
+   WORK & EXPERIENCE SECTION
+   =============================== */
+
+.home__experience {
+  @extend %padding-home;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+
+  @include media("<=phone") {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  &__head {
+    margin-bottom: 6.4rem;
+
+    @include media(">tablet") {
+      text-align: center;
+      max-width: 65rem;
+      margin: 0 auto 8rem;
+    }
+  }
+
+  &__title {
+    @extend %description-16;
+    text-transform: uppercase;
+    color: $col-boulder;
+    margin-bottom: 2.4rem;
+    letter-spacing: 0.02em;
+    font-weight: 600;
+  }
+
+  &__tagline {
+    @extend %description-32;
+    color: $col-gray;
+    max-width: 95rem;
+    @extend %links;
+
+    @include media(">tablet") {
+      margin: 0 auto;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 32.5rem;
+    column-gap: 6.4rem;
+
+    @include media("<=tablet") {
+      grid-template-columns: 1fr;
+      row-gap: 9.6rem;
+    }
+  }
+
+  /* LEFT: timeline list (reuse pattern from education) */
+  &__list {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0.8rem;
+      left: 1.2rem;
+      width: 2px;
+      background: $col-boulder;
+      transform-origin: top;
+      transform: scaleY(0);
+      transition: transform 0.9s cubic-bezier(0.19, 1, 0.22, 1);
+      height: calc(100% - 6.4rem);
+
+      @include media("<=phone") {
+        height: calc(100% - 4.8rem);
+      }
+    }
+
+    &[data-timeline].is-visible::before {
+      transform: scaleY(1);
+    }
+  }
+
+  /* RIGHT: certificates */
+  &__certs {
+    @extend %description-16;
+    @extend %links;
+    color: $col-gray;
+
+    .certs__title {
+      @extend %description-12;
+      text-transform: uppercase;
+      color: $col-boulder;
+      margin-bottom: 2.4rem;
+    }
+
+    .cert-item {
+      display: grid;
+      grid-template-columns: 1fr auto auto;
+      align-items: center;
+      border-top: 2px solid $col-boulder;
+      padding: 1.6rem 0;
+      gap: 1.2rem;
+
+      &:last-child {
+        border-bottom: 2px solid $col-boulder;
+      }
+
+      &__name {
+        color: $col-gray;
+      }
+
+      &__year {
+        @extend %description-12;
+        color: $col-boulder;
+        text-transform: uppercase;
+      }
+
+      &__link {
+        @extend %description-12;
+        color: $col-boulder;
+        text-transform: uppercase;
+        transition: color 0.2s;
+
+        @media (any-pointer: fine) {
+          &:hover {
+            color: $col-orange;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Items in the timeline */
+.exp-item {
+  position: relative;
+  padding-left: 5rem;
+  margin-bottom: 6.4rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  @include media("<=phone") {
+    padding-left: 3.6rem;
+    margin-bottom: 4.8rem;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__dot {
+    position: absolute;
+    left: 0.5rem;
+    top: 0.8rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 2px solid $col-boulder;
+    border-radius: 50%;
+    background: $col-black;
+    transform: scale(0);
+    transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+    will-change: transform;
+  }
+
+  &.is-visible &__dot {
+    transform: scale(1);
+  }
+
+  @media (any-pointer: fine) {
+    &:hover {
+      .exp-item__dot {
+        border-color: $col-orange;
+        background: $col-orange;
+        box-shadow: 0 0 0 4px rgba($col-orange, 0.2);
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 1.2rem;
+        top: 0.8rem;
+        bottom: -6.4rem;
+        width: 2px;
+        background: $col-orange;
+        z-index: 2;
+        opacity: 1;
+        transition: opacity 0.3s ease;
+
+        @include media("<=phone") {
+          bottom: -4.8rem;
+        }
+      }
+    }
+
+    &:last-child:hover::before {
+      bottom: auto;
+      height: calc(100% - 0.8rem);
+    }
+  }
+
+  &__date {
+    @extend %description-12;
+    text-transform: uppercase;
+    color: $col-boulder;
+    margin-bottom: 0.8rem;
+    line-height: 1.4;
+    transition: color 0.3s ease;
+  }
+
+  &__body {
+    @extend %description-16;
+    color: $col-gray;
+    max-width: 85rem;
+
+    @include media(">tablet") {
+      max-width: 95rem;
+    }
+  }
+
+  &__role {
+    @extend %description-32;
+    color: $col-boulder;
+    margin-bottom: 0.8rem;
+    line-height: 1.1;
+
+    a {
+      color: inherit;
+      transition: color 0.2s;
+      @media (any-pointer: fine) {
+        &:hover {
+          color: $col-orange;
+        }
+      }
+    }
+  }
+
+  &__desc {
+    @extend %description-16;
+    line-height: 1.5;
+    margin-bottom: 1.6rem;
+  }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem 1.2rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      @extend %description-12;
+      text-transform: uppercase;
+      border: 2px solid $col-boulder;
+      padding: 0.4rem 0.8rem;
+      border-radius: 999px;
+      color: $col-boulder;
+    }
+  }
+
+  @media (any-pointer: fine) {
+    &:hover .exp-item__date {
+      color: $col-orange;
+    }
+  }
+}
+
+
+  &__footer {
+    justify-content: center;
+    position: relative;
+    padding-bottom: 4rem;
+    font-weight: 400;
+    font-size: 16px;
+
+    @include media(">tablet") {
+      display: flex;
+    }
+
+    @include media("<=tablet") {
+      margin-left: auto;
+      max-width: 40rem;
+      width: 100%;
+    }
+
+    @include media("<=phone") {
+      max-width: 255px;
+      width: 100%;
+    }
+
+    &__left {
+      display: flex;
+      font-family: $font-sauce;
+      @include media(">tablet") {
+        left: 2.4rem;
+        position: absolute;
+        right: 0;
+        top: 1rem;
+      }
+
+      .place {
+        color: $col-boulder;
+        margin-right: 1.4rem;
+      }
+
+      .time {
+        position: relative;
+        display: flex;
+
+        @include media("<=tablet") {
+          margin-bottom: 2.4rem;
+        }
+      }
+    }
+
+    &__right {
+      @extend %links;
+
+      @include media(">tablet") {
+        right: 2.4rem;
+        position: absolute;
+        top: 1rem;
+      }
+    }
+
+    &__center {
+      .footer__links {
+        @include media(">tablet") {
+          display: flex;
+        }
+
+        align-items: center;
+
+        @include media("<=tablet") {
+          margin-bottom: 4.8rem;
+        }
+        .link__flex {
+          display: flex;
+          margin-left: auto;
+
+          @include media("<=tablet") {
+            max-width: 40rem;
+            width: 100%;
+          }
+
+          @include media("<=phone") {
+            max-width: 255px;
+            width: 100%;
+          }
+
+          &__inner {
+            display: flex;
+            .c-button {
+              @include media("<=tablet") {
+                &:first-of-type {
+                  margin-right: 0.8rem;
+                }
+              }
+            }
+            &.second {
+              .c-button {
+                @include media("<=tablet") {
+                  &:first-of-type {
+                    margin-right: 0;
+                  }
+                  &:last-of-type {
+                    margin-right: 0.8rem;
+                  }
+                }
+              }
+            }
+
+            @include media(">tablet") {
+              &:last-of-type {
+                margin-left: 0.8rem;
+              }
+            }
+          }
+
+          @include media("<=tablet") {
+            &__inner {
+              &.second {
+                margin-top: 1.6rem;
+                flex-direction: row-reverse;
+              }
+            }
+          }
+        }
+
+        .c-button {
+          @include media(">tablet") {
+            &:not(:last-of-type) {
+              margin-right: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Individual education item
+.edu-item {
+  position: relative;
+  padding-left: 5rem;
+  margin-bottom: 6.4rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  @include media("<=phone") {
+    padding-left: 3.6rem;
+    margin-bottom: 4.8rem;
+  }
+
+  // For the last item, reduce bottom margin so the line doesn't extend too far
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__dot {
+    position: absolute;
+    left: 0.5rem;
+    top: 0.8rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 2px solid $col-boulder;
+    border-radius: 50%;
+    background: $col-black;
+    transform: scale(0);
+    transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+    will-change: transform;
+  }
+
+  &.is-visible &__dot {
+    transform: scale(1);
+  }
+
+  // Hover effects
+  @media (any-pointer: fine) {
+    &:hover {
+      .edu-item__dot {
+        border-color: $col-orange;
+        background: $col-orange;
+        box-shadow: 0 0 0 4px rgba($col-orange, 0.2);
+      }
+
+      // Create orange segment on timeline for non-last items
+      &::before {
+        content: "";
+        position: absolute;
+        left: 1.2rem;
+        top: 0.8rem;
+        bottom: -6.4rem;
+        width: 2px;
+        background: $col-orange;
+        z-index: 2;
+        opacity: 1;
+        transition: opacity 0.3s ease;
+
+        @include media("<=phone") {
+          bottom: -4.8rem;
+        }
+      }
+    }
+
+    // Special case for last item - make the orange line the same height as content
+    &:last-child:hover::before {
+      bottom: auto;
+      height: calc(100% - 0.8rem);
+    }
+  }
+
+  &__date {
+    @extend %description-12;
+    text-transform: uppercase;
+    color: $col-boulder;
+    margin-bottom: 0.8rem;
+    line-height: 1.4;
+    transition: color 0.3s ease;
+  }
+
+  &__body {
+    @extend %description-16;
+    color: $col-gray;
+    max-width: 85rem;
+
+    @include media(">tablet") {
+      max-width: 95rem;
+    }
+  }
+
+  &__school {
+    @extend %description-32;
+    color: $col-boulder;
+    margin-bottom: 0.8rem;
+    line-height: 1.1;
+
+    a {
+      color: inherit;
+      transition: color 0.2s;
+      @media (any-pointer: fine) {
+        &:hover {
+          color: $col-orange;
+        }
+      }
+    }
+  }
+
+  &__degree {
+    @extend %description-16;
+    color: $col-gray;
+    margin-bottom: 1.6rem;
+  }
+
+  &__details {
+    @extend %description-16;
+    line-height: 1.5;
+    margin-bottom: 2.4rem;
+
+    br {
+      @include media("<=phone") {
+        display: none;
+      }
+    }
+  }
+
+  // Enhanced hover effect for date
+  @media (any-pointer: fine) {
+    &:hover .edu-item__date {
+      color: $col-orange;
+    }
+  }
+}
